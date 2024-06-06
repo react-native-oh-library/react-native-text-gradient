@@ -47,7 +47,7 @@ yarn add @react-native-oh-tpl/react-native-text-gradient@file:#
 > [!WARNING] 使用时 import 的库名不变。
 
 ```js
-import {LinearTextGradient} from '@react-native-text-gradient';
+import {LinearTextGradient} from 'react-native-text-gradient';
 
 <LinearTextGradient
  style={styles.welcome}
