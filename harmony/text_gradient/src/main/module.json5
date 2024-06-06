@@ -1,0 +1,7 @@
+{
+  module: {
+    name: 'text_gradient',
+    type: 'har',
+    deviceTypes: ['default'],
+  },
+}

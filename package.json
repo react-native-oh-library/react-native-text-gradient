@@ -1,6 +1,6 @@
 {
-  "name": "react-native-text-gradient",
-  "version": "0.1.7",
+  "name": "@react-native-oh-tpl/react-native-text-gradient",
+  "version": "0.1.7-0.0.1",
   "description": "Text gradient for React-Native",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -28,15 +28,13 @@
     "fbjs": "*",
     "@babel/runtime": "*"
   },
+  "dependencies": {
+    "react-native-text-gradient": "0.1.7"
+  },
   "files": [
-    "android",
-    "TextGradientExample",
-    "ios",
     "src",
-    "img",
-    ".dockerignore",
     "*.md",
-    "*.podspec",
-    "patch-rn.js"
+    "patch-rn.js",
+    "harmony"
   ]
 }
