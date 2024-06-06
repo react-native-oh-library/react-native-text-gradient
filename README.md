@@ -202,14 +202,15 @@ ohpm install
 
 > [!tip] "HarmonyOS Support"列为 yes 表示 HarmonyOS 平台支持该属性；no 则表示不支持；partially 表示部分支持。使用方法跨平台一致，效果对标 iOS 或 Android 的效果。
 
+
 | Name            |                                                                           Description                                                               |  Type  | Required | Platform     | HarmonyOS Support  |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------| ------ | -------- | -------------| ------------------ |
 | start           | Coordinates declare the position that the gradient starts at, as a fraction of the overall size of the gradient, starting from the top left corner. | number |   yes    | IOS/Android  |       yes          |
 | end             | Same as start, but for the end of the gradient.                                                                                                     | number |   yes    | IOS/Android  |       yes          |
 | loactions       | An optional array of numbers defining the location of each gradient color stop, mapping to the color with the same index in prop.                   | number[]  |   yes    | IOS/Android  |       yes          |
 | colors          | An array of at least two color values that represent gradient colors.                                                                               | string   |   yes    | IOS/Android  |       yes          |
-| useViewFrame    | Optional. If true gradient will be calculated for text view background frame rather than text frame.                                                | boolean  |   yes    | IOS/Android  |       yes          |
-| useGlobalCache  |  accessing or managing a cache that is available globally throughout the application.                                                               | boolean  |   yes    | IOS/Android  |       yes          |
+| useViewFrame    | Optional. If true gradient will be calculated for text view background frame rather than text frame.                                                | boolean  |   yes    | IOS/Android  |       no          |
+| useGlobalCache  |  accessing or managing a cache that is available globally throughout the application.                                                               | boolean  |   yes    | IOS/Android  |       no          |
 
 
 ## 遗留问题
