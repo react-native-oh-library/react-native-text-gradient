@@ -26,6 +26,8 @@
 #include <memory>
 #include "glog/logging.h"
 
+static std::map<ArkUI_NodeHandle,std::vector<facebook::react::SharedColor>> m_UseGlobCache;
+
 namespace rnoh {
     LinearTextGradientTextNode::LinearTextGradientTextNode()
         : ArkUINode(NativeNodeApi::getInstance()->createNode(ArkUI_NodeType::ARKUI_NODE_STACK)) {}
@@ -49,7 +51,10 @@ namespace rnoh {
 
     void LinearTextGradientTextNode::setLinearGradient(std::vector<facebook::react::SharedColor> &colors,
                                                        std::vector<facebook::react::Float> locations, float &angle,
-                                                       ArkUI_NodeHandle nodeHandle) {
+                                                       ArkUI_NodeHandle nodeHandle,bool useGlobalCache) {
+        if(useGlobalCache && m_UseGlobCache.find(nodeHandle)!=m_UseGlobCache.end() && colors.size()<=0){
+           colors = m_UseGlobCache.find(nodeHandle)->second;
+        }
         std::vector<uint32_t> colorsInput;
         std::vector<float> stopsInput;
         for (auto color : colors) {
@@ -67,6 +72,7 @@ namespace rnoh {
                                                   sizeof(linearGradientValue) / sizeof(ArkUI_NumberValue),
                                                   .object = reinterpret_cast<void *>(&colorStop)};
         maybeThrow(NativeNodeApi::getInstance()->setAttribute(nodeHandle, NODE_LINEAR_GRADIENT, &linearGradientItem));
+        m_UseGlobCache[nodeHandle] = colors;
     }
 
 
