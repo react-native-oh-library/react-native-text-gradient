@@ -28,6 +28,9 @@
     "fbjs": "*",
     "@babel/runtime": "*"
   },
+  "harmony": {
+    "alias":"react-native-text-gradient"
+  },
   "dependencies": {
     "react-native-text-gradient": "0.1.7"
   },
