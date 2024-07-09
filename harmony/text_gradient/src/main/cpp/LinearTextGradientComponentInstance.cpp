@@ -55,12 +55,11 @@ namespace rnoh {
         this->start = props->gradientStart;
         this->end = props->gradientEnd;
         float angle = this->computeAngle(this->start, this->end);
-
         this->getLocalRootArkUINode().setBlendMode(ARKUI_BLEND_MODE_SRC_OVER,
                                                    this->getLocalRootArkUINode().getArkUINodeHandle());
         this->getLocalRootArkUINode().setBlendMode(ARKUI_BLEND_MODE_DST_IN, this->m_textNode.getArkUINodeHandle());
         this->getLocalRootArkUINode().setLinearGradient(this->colors, props->locations, angle,
-                                                        this->getLocalRootArkUINode().getArkUINodeHandle());
+                                                        this->getLocalRootArkUINode().getArkUINodeHandle(),props->useGlobalCache);
     }
     void LinearTextGradientComponentInstance::onStateChanged(SharedConcreteState const &textState) {
         CppComponentInstance::onStateChanged(textState);

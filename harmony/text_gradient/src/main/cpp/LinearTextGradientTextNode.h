@@ -39,7 +39,7 @@ namespace rnoh {
         void setBlendMode(int32_t blendMode, ArkUI_NodeHandle nodeHandle);
         void setLinearGradient(std::vector<facebook::react::SharedColor> &colors,
                                std::vector<facebook::react::Float> locations, float &angle,
-                               ArkUI_NodeHandle nodeHandle);
+                               ArkUI_NodeHandle nodeHandle,bool useGlobalCache);
     };
 
 } // namespace rnoh
