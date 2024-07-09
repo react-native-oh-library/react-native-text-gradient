@@ -209,8 +209,8 @@ ohpm install
 | end             | Same as start, but for the end of the gradient.                                                                                                     | number |   yes    | IOS/Android  |       yes          |
 | loactions       | An optional array of numbers defining the location of each gradient color stop, mapping to the color with the same index in prop.                   | number[]  |   yes    | IOS/Android  |       yes          |
 | colors          | An array of at least two color values that represent gradient colors.                                                                               | string   |   yes    | IOS/Android  |       yes          |
-| useViewFrame    | Optional. If true gradient will be calculated for text view background frame rather than text frame.                                                | boolean  |   yes    | IOS/Android  |       no          |
-| useGlobalCache  |  accessing or managing a cache that is available globally throughout the application.                                                               | boolean  |   yes    | IOS/Android  |       no          |
+| useViewFrame    | Optional. If true gradient will be calculated for text view background frame rather than text frame.                                                | boolean  |   yes    | IOS/Android  |       yes          |
+| useGlobalCache  |  accessing or managing a cache that is available globally throughout the application.                                                               | boolean  |   yes    | IOS/Android  |       yes          |
 
 
 ## 遗留问题
