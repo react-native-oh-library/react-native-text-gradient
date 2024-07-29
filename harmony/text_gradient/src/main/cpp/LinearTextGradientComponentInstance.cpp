@@ -79,7 +79,7 @@ namespace rnoh {
                     auto result = arkTsTurboModule->callSync("measureTextSize", args);
                     double width = result["width"].asDouble();
                     double height = result["height"].asDouble();
-                    this->getLocalRootArkUINode().setSize({width, height});
+                    this->getLocalRootArkUINode().setLayoutRect(m_layoutMetrics.frame.origin,{width,height},m_layoutMetrics.pointScaleFactor);
                 }
             }
         }
