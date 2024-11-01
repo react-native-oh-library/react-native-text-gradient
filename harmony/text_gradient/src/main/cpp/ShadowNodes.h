@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-#ifndef HARMONY_LINEAR_GRADIENT_SRC_MAIN_CPP_SHADOWNODES_H
-#define HARMONY_LINEAR_GRADIENT_SRC_MAIN_CPP_SHADOWNODES_H
+#ifndef HARMONY_LINEAR_TEXT_GRADIENT_SRC_MAIN_CPP_SHADOWNODES_H
+#define HARMONY_LINEAR_TEXT_GRADIENT_SRC_MAIN_CPP_SHADOWNODES_H
 #pragma once
 #include "react/renderer/components/text/BaseTextShadowNode.h"
 #include <react/renderer/components/view/ConcreteViewShadowNode.h>

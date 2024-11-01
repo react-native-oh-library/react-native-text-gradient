@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-#ifndef HARMONY_LINEAR_GRADIENT_SRC_MAIN_CPP_PROPS_H
-#define HARMONY_LINEAR_GRADIENT_SRC_MAIN_CPP_PROPS_H
+#ifndef HARMONY_LINEAR_TEXT_GRADIENT_SRC_MAIN_CPP_PROPS_H
+#define HARMONY_LINEAR_TEXT_GRADIENT_SRC_MAIN_CPP_PROPS_H
 
 #include <react/renderer/components/text/BaseTextProps.h>
 #include "react/renderer/attributedstring/ParagraphAttributes.h"
