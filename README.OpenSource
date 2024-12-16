@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-text-gradient",
+        "License": "MIT License",
+        "License File": "LICENSE",
+        "Version Number": "0.1.7",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/iyegoroff/react-native-text-gradient",
+        "Description": "Text gradient for React-Native (ON HIATUS)"
+    }
+]
